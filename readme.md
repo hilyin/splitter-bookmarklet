@@ -2,6 +2,8 @@
 
 A simple bookmarklet that allows you to load and display large chunks of text in a user-friendly interface.
 
+![](screenshot.webp?raw=true)
+
 ## Features
 
 - Load text from a user prompt
