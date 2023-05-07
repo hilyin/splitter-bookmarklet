@@ -56,8 +56,6 @@ javascript: (function () {
                 cursor: "pointer"
             };
 
-            
-
             const copyButton = document.createElement('button');
             Object.assign(copyButton.style, buttonStyles);
             copyButton.id = 'copy-button';
