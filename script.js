@@ -1,5 +1,5 @@
 javascript: (function () {
-    const promptText = `Act as a text loader, memorizing subsequent documents. Multiple files exist, labeled ### DOCUMENT NAME. Chunks are sent with ||START CHUNK x/TOTAL|| and ||END CHUNK x/TOTAL||. Respond only OK: "CHUNK: x/TOTAL" for each message. No other replies or explanations. Start:`;
+    const promptText = `Act as a text loader, memorizing subsequent documents. Chunks are sent with ||START CHUNK x/TOTAL|| and ||END CHUNK x/TOTAL||. Respond only OK: "CHUNK: x/TOTAL" for each message. No other replies or explanations. Start:`;
 
     const input = prompt('Enter your text:');
     if (input) {
@@ -24,7 +24,7 @@ javascript: (function () {
             Object.assign(chunkWindow.style, {
                 position: 'fixed',
                 top: '10px',
-                left: '30%',
+                right: '10px',
                 width: '70%',
                 height: '50%',
                 zIndex: 9999,
