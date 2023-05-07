@@ -1,4 +1,4 @@
-# Text Loader Bookmarklet
+# Text Splitter Bookmarklet
 
 A simple bookmarklet that allows you to load and display large chunks of text in a user-friendly interface.
 
