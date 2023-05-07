@@ -1,10 +1,10 @@
 javascript: (function () {
-    const promptText = `Act as a text loader, memorizing subsequent documents. Multiple files exist, labeled ### DOCUMENT NAME. Chunks are sent with ||START CHUNK x/TOTAL|| and ||END CHUNK x/TOTAL||. Respond only OK: ||CHUNK x/TOTAL|| for each message. No other replies or explanations. Start:`;
+    const promptText = `Act as a text loader, memorizing subsequent documents. Multiple files exist, labeled ### DOCUMENT NAME. Chunks are sent with ||START CHUNK x/TOTAL|| and ||END CHUNK x/TOTAL||. Respond only OK: "CHUNK: x/TOTAL" for each message. No other replies or explanations. Start:`;
 
     const input = prompt('Enter your text:');
     if (input) {
         const fullText = promptText + input;
-        const chunkSize = 2048;
+        const chunkSize = 8000;
         const chunks = [];
 
         for (let i = 0, count = 1; i < fullText.length; i += chunkSize, count++) {
