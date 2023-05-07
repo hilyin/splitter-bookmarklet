@@ -24,8 +24,8 @@ javascript: (function () {
             Object.assign(chunkWindow.style, {
                 position: 'fixed',
                 top: '10px',
-                left: '50%',
-                width: '50%',
+                left: '30%',
+                width: '70%',
                 height: '50%',
                 zIndex: 9999,
                 overflow: 'auto',
@@ -46,7 +46,12 @@ javascript: (function () {
             chunkWindow.appendChild(chunkTextArea);
 
             const buttonContainer = document.createElement('div');
-            buttonContainer.style.marginTop = '10px';
+            Object.assign(buttonContainer.style, {
+                marginTop: '10px',
+                display: 'flex',
+                justifyContent: 'flex-end',
+                gap: '8px'
+            });
             chunkWindow.appendChild(buttonContainer);
 
             const buttonStyles = {
